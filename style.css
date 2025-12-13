@@ -1204,3 +1204,42 @@ hr {
     font-size: 0.7rem;
     font-weight: 700;
 }
+
+/*
+ * -----------------------------------------------------
+ * FINAL OVERRIDE FOR MOBILE NAVIGATION VISIBILITY
+ * (يضمن ظهور القائمة الرئيسية في وضع الجوال)
+ * -----------------------------------------------------
+ */
+
+@media (max-width: 992px) {
+    /* override: ضمان ظهور الروابط بدلاً من إخفائها */
+    .nav-links {
+        display: flex !important; 
+        flex-wrap: nowrap !important; /* يمنع نزول الروابط إلى سطر جديد */
+        justify-content: space-around !important; /* يوزع الروابط بالتساوي */
+        width: 100%;
+        gap: 5px; /* تقليل المسافة بين الروابط */
+        padding: 0 10px;
+    }
+    
+    /* تصغير حجم خط الروابط قليلاً لتناسب الشاشة الضيقة */
+    .nav-links a {
+        font-size: 0.8rem; 
+        padding: 10px 5px;
+        white-space: nowrap;
+    }
+
+    /* إخفاء محتوى القائمة المنسدلة على الجوال لعدم وجود مساحة كافية */
+    .dropdown-content {
+        display: none !important;
+    }
+}
+
+/* override: إخفاء زر قائمة الجوال (Hamburger Menu) لأنه لم يعد ضرورياً */
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: none !important;
+    }
+}
+

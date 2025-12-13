@@ -11,20 +11,57 @@
 <body>
 
     <header>
-     <nav class="navbar container">
+    <nav class="navbar container">
         <div class="logo">Shifra</div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active-link">Explore</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="index.html" class="dropbtn">Explore <i class="fas fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown-content">
+                    <a href="index.html">Homepage</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Top Rated</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="courses.html" class="dropbtn">Courses <i class="fas fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown-content">
+                    <a href="courses.html">All Categories</a>
+                    <a href="#design">Design</a>
+                    <a href="#webdev">Web Development</a>
+                    <a href="#cyber">Cyber Security</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Contact <i class="fas fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Support Center</a>
+                    <a href="#">Partnerships</a>
+                    <a href="#">Careers</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="about.html" class="dropbtn">About Us <i class="fas fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown-content">
+                    <a href="about.html">Our Mission</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Testimonials</a>
+                </div>
+            </li>
         </ul>
         <div class="auth-btn-group">
+            <div class="cart-icon">
+                 <i class="fas fa-shopping-bag"></i> 
+                 <span class="cart-count">0</span>
+            </div>
             <a href="#" class="btn-sm login-btn">Login</a>
             <button class="menu-toggle"><i class="fas fa-bars"></i></button>
         </div>
-     </nav>
-    </header>
+      </nav>
+   </header>
+
 
 
     <section class="hero-section">

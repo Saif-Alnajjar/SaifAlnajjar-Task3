@@ -1105,3 +1105,25 @@ hr {
         max-width: 100%;
     }
 }
+
+/* Add this style to your style.css file */
+
+.nav-links .active-link {
+    color: var(--dark-blue-bg); /* Use a darker color */
+    font-weight: 700;
+    /* Optional: Add a subtle border or background if needed, matching the tiny dot in the original image */
+    position: relative;
+}
+
+/* Add a small dark blue dot/line below the active link */
+.nav-links .active-link::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--dark-blue-bg);
+    border-radius: 50%;
+    bottom: -15px; /* Adjust position relative to the link */
+    left: 50%;
+    transform: translateX(-50%);
+}

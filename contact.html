@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifra - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <div class="logo">Shifra</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Explore <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Homepage</a>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Top Rated</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="courses.html" class="dropbtn">Courses <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="courses.html">All Categories</a>
+                        <a href="#design">Design</a>
+                        <a href="#webdev">Web Development</a>
+                        <a href="#cyber">Cyber Security</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html" class="dropbtn active-link">Contact <i class="fas fa-angle-down"></i></a> 
+                    <div class="dropdown-content">
+                        <a href="contact.html">Support Center</a>
+                        <a href="#">Partnerships</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">About Us <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">Our Mission</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="auth-btn-group">
+                <div class="cart-icon">
+                     <i class="fas fa-shopping-bag"></i> 
+                     <span class="cart-count">0</span>
+                </div>
+                <a href="#" class="btn-sm login-btn">Login</a>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-hero-section">
+        <div class="container contact-hero-wrapper">
+            <h1>We'd love to hear from you.</h1>
+            <p>Whether you have a question about courses, pricing, or anything else, our team is ready to answer your questions.</p>
+        </div>
+    </section>
+
+    <main class="contact-main-content container">
+        
+        <div class="contact-form-column">
+            <h2>Send us a Message</h2>
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                
+                 <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Course Inquiry, Support, etc.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your request or question..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info-column">
+            <div class="info-card">
+                <h2>Contact Information</h2>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Palestine, Gaza Strip, Rimal Area</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@shifra-academy.com</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+970 599 XXX XXX</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Sunday - Thursday, 9:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110.15049360815124!2d34.46083321590415!3d31.51731114227092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7633e215e9e7%3A0x1c8b3f87b8d4e17e!2sGaza!5e0!3m2!1sen!2sil!4v1703672000000" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="cta-footer">
+        <div class="container">
+            <h2>Ready to start your learning journey?</h2>
+            <a href="#" class="btn cta-btn">Register Now</a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="copyright-info">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Help Center</a>
+            <p>&copy; 2024 Shifra Training Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

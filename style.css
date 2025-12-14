@@ -1690,3 +1690,42 @@ hr {
     }
 }
 
+
+.feature-image-circle {
+    /* ضبط الحجم الدقيق للمربع (الدائرة) */
+    width: 80px !important;  
+    height: 80px !important; 
+    
+    /* تنسيق الشكل الدائري والإطار الأبيض */
+    background-color: var(--text-light) !important; /* الخلفية البيضاء */
+    border-radius: 50% !important; /* لجعلها دائرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #ddd !important;
+    
+    /* لضبط مكان الصورة داخل الدائرة (نستخدم flex للمركزة) */
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    
+    /* لتوسيط العنصر في الصفحة والمسافة */
+    margin: 0 auto 15px !important; 
+    
+    /* خصائص الصورة نفسها: التأكد من أنها تملأ المربع وتظهر بشكل جيد */
+    object-fit: cover !important; /* تأكد من أن الصورة تملأ المربع بالكامل */
+    padding: 15px !important; /* مسافة داخلية حول الصورة */
+}
+
+/* لضمان أن الصورة الداخلية لا تتجاوز حدود الدائرة */
+.feature-image-circle img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important; /* ضمان احتواء الصورة دون قص */
+}
+
+/* تنسيق الجوال */
+@media (max-width: 768px) {
+    .choose-features {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+}

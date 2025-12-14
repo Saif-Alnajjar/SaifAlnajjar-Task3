@@ -59,88 +59,115 @@
         </nav>
     </header>
 
-    <section class="contact-hero-section">
-        <div class="container contact-hero-wrapper">
-            <h1>We'd love to hear from you.</h1>
-            <p>Whether you have a question about courses, pricing, or anything else, our team is ready to answer your questions.</p>
+    <section class="contact-hero-banner">
+        <div class="container banner-wrapper">
+            <div class="banner-text">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Whether you have a question about courses, pricing, or anything else, our team is ready to answer your questions.</p>
+                <a href="#contact-form" class="btn primary-btn contact-btn-main">Contact Us</a>
+            </div>
+            
+            <div class="banner-media-card">
+                <div class="card-info">
+                    <p class="course-label">Customer Help</p>
+                    <h3>UI/UX Fundamentals</h3>
+                    <p class="instructor-label">Instructor: Ahmed Khalil</p>
+                </div>
+                <div class="media-preview">
+                    <img src="contact-person-placeholder.png" alt="Customer Support" class="person-image">
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                </div>
+            </div>
         </div>
     </section>
 
     <main class="contact-main-content container">
         
-        <div class="contact-form-column">
-            <h2>Send us a Message</h2>
+        <div class="contact-form-column" id="contact-form">
+            <h2>Contact Form</h2>
+            <p class="form-instruction">Send us a Message</p>
             <form action="#" method="POST" class="contact-form">
                 
                 <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Email Address">
                 </div>
                 
                  <div class="form-group">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required placeholder="Course Inquiry, Support, etc.">
+                    <input type="text" id="subject" name="subject" required placeholder="Subject">
                 </div>
                 
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your request or question..."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
                 </div>
+                
+                <p class="privacy-note">For standby items di latem used</p>
                 
                 <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
             </form>
+
+            <div class="extra-message-section">
+                <p class="section-title-alt">Sent us a Message</p>
+                <p>Wed is bring toner ett abuikey our elofings</p>
+                
+                <div class="message-item">
+                    <p class="message-title">Message</p>
+                    <p class="message-body">We'd love hon use yase sdilery our oure lmtj our indie kssr your questions.</p>
+                </div>
+                
+                <div class="message-item">
+                    <p class="message-title">Teller message</p>
+                    <p class="message-body">Teet a love ron ye yass sdilery our eauts lmtj our indie kssr your questions.</p>
+                </div>
+                <button class="btn primary-btn submit-btn">Send Message</button>
+            </div>
         </div>
 
         <div class="contact-info-column">
-            <div class="info-card">
-                <h2>Contact Information</h2>
+             <h2 class="column-title">Contact Information</h2>
+            <div class="info-card-blue">
+                <h3>Contact Information</h3>
                 
-                <div class="info-item">
+                <div class="info-item-blue">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>Palestine, Gaza Strip, Rimal Area</p>
                 </div>
                 
-                <div class="info-item">
+                <div class="info-item-blue">
                     <i class="fas fa-envelope"></i>
-                    <p>info@shifra-academy.com</p>
+                    <p>info@599 XXX.att</p>
                 </div>
                 
-                <div class="info-item">
+                <div class="info-item-blue">
                     <i class="fas fa-phone-alt"></i>
                     <p>+970 599 XXX XXX</p>
                 </div>
                 
-                <div class="info-item">
+                <div class="info-item-blue">
                     <i class="fas fa-clock"></i>
                     <p>Sunday - Thursday, 9:00 AM - 4:00 PM</p>
                 </div>
             </div>
             
-            <div class="map-placeholder">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110.15049360815124!2d34.46083321590415!3d31.51731114227092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7633e215e9e7%3A0x1c8b3f87b8d4e17e!2sGaza!5e0!3m2!1sen!2sil!4v1703672000000" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-placeholder-contact">
+                <img src="map-placeholder-img.png" alt="Map Location" class="map-image">
             </div>
+             <p class="extra-footer-text">Fuefer Fueter</p>
         </div>
         
     </main>
 
-    <footer class="cta-footer">
-        <div class="container">
-            <h2>Ready to start your learning journey?</h2>
-            <a href="#" class="btn cta-btn">Register Now</a>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
+    <footer class="footer-simple">
         <div class="copyright-info">
             <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Help Center</a>
-            <p>&copy; 2024 Shifra Training Center. All Rights Reserved.</p>
+            <p>© 2024 Shifra Training Center. All Rights Reserved.</p>
         </div>
     </footer>
 

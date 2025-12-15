@@ -1729,3 +1729,24 @@ hr {
         gap: 30px !important;
     }
 }
+
+.course-card .course-icon {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important; /* لجعل المربع دائرياً */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+    background-color: var(--light-bg) !important; /* لون الخلفية الفاتح */
+    
+    font-size: 0 !important; 
+    padding: 0 !important;
+}
+
+/* 2. ضبط الصورة نفسها داخل المربع */
+.course-icon .course-image-fit {
+    width: 65% !important; /* حجم الصورة داخل الدائرة */
+    height: 65% !important;
+    object-fit: contain !important; /* لضمان عدم تشوه الصورة */
+}

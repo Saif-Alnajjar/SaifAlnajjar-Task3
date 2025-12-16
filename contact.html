@@ -18,33 +18,24 @@
                     <a href="index.html" class="dropbtn">Explore <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-content">
                         <a href="index.html">Homepage</a>
-                        <a href="#">New Arrivals</a>
-                        <a href="#">Top Rated</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="courses.html" class="dropbtn">Courses <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-content">
                         <a href="courses.html">All Categories</a>
-                        <a href="#design">Design</a>
-                        <a href="#webdev">Web Development</a>
-                        <a href="#cyber">Cyber Security</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="contact.html" class="dropbtn active-link">Contact <i class="fas fa-angle-down"></i></a> 
                     <div class="dropdown-content">
                         <a href="contact.html">Support Center</a>
-                        <a href="#">Partnerships</a>
-                        <a href="#">Careers</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="about.html" class="dropbtn">About Us <i class="fas fa-angle-down"></i></a>
                     <div class="dropdown-content">
                         <a href="about.html">Our Mission</a>
-                        <a href="#">Our Team</a>
-                        <a href="#">Testimonials</a>
                     </div>
                 </li>
             </ul>
@@ -63,18 +54,19 @@
         <div class="container banner-wrapper">
             <div class="banner-text">
                 <h1>Contact Us</h1>
-                <p>We'd love to hear from you. Whether you have a question about courses, pricing, or anything else, our team is ready to answer your questions.</p>
-                <a href="#contact-form" class="btn primary-btn contact-btn-main">Contact Us</a>
+                <p>We'd love fom you. Whether have a about yor or anyeyeing else, our team abom ready youid questions.</p>
+                <a href="#contact-form-section" class="btn primary-btn contact-btn-main">Contact Us</a>
             </div>
             
             <div class="banner-media-card">
                 <div class="card-info">
-                    <p class="course-label">Customer Help</p>
+                    <p class="course-label">Contastl Htiq</p>
+                    <button class="detail-media-btn">Detail Media</button>
                     <h3>UI/UX Fundamentals</h3>
                     <p class="instructor-label">Instructor: Ahmed Khalil</p>
                 </div>
                 <div class="media-preview">
-                    <img src="images/IMG_5395.jpeg" alt="Customer Support" class="person-image">
+                    <img src="images/contact-person.png" alt="Customer Support" class="person-image">
                     <button class="play-btn"><i class="fas fa-play"></i></button>
                 </div>
             </div>
@@ -83,39 +75,42 @@
 
     <main class="contact-main-content container">
         
-        <div class="contact-form-column" id="contact-form">
-            <h2>Contact Form</h2>
-            <p class="form-instruction">Send us a Message</p>
-            <form action="#" method="POST" class="contact-form">
-                
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Email Address">
-                </div>
-                
-                 <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required placeholder="Subject">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
-                </div>
-                
-                <p class="privacy-note">For standby items di latem used</p>
-                
-                <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
-            </form>
+        <div class="contact-form-container">
+            <h2 class="form-title-main">Contact Form</h2>
+            
+            <div class="contact-form-wrapper" id="contact-form-section">
+                <p class="form-instruction">Send us a Message</p>
+                <form action="#" method="POST" class="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Email Address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <p class="privacy-note">For standby items di latem used</p>
+                    
+                    <button type="submit" class="btn primary-btn submit-btn-small">Send Message</button>
+                </form>
+            </div>
 
             <div class="extra-message-section">
                 <p class="section-title-alt">Sent us a Message</p>
-                <p>Wed is bring toner ett abuikey our elofings</p>
+                <p class="alt-p-text">Wed is bring toner ett abuikey our elofings</p>
                 
                 <div class="message-item">
                     <p class="message-title">Message</p>
@@ -126,12 +121,13 @@
                     <p class="message-title">Teller message</p>
                     <p class="message-body">Teet a love ron ye yass sdilery our eauts lmtj our indie kssr your questions.</p>
                 </div>
-                <button class="btn primary-btn submit-btn">Send Message</button>
+                <button class="btn primary-btn submit-btn-large">Send Message</button>
             </div>
         </div>
 
-        <div class="contact-info-column">
-             <h2 class="column-title">Contact Information</h2>
+        <div class="contact-info-container">
+            <h2 class="info-column-title">Contact Information</h2>
+            
             <div class="info-card-blue">
                 <h3>Contact Information</h3>
                 
@@ -150,24 +146,23 @@
                     <p>+970 599 XXX XXX</p>
                 </div>
                 
-                <div class="info-item-blue">
+                <div class="info-item-blue clock-item">
                     <i class="fas fa-clock"></i>
                     <p>Sunday - Thursday, 9:00 AM - 4:00 PM</p>
                 </div>
             </div>
             
             <div class="map-placeholder-contact">
-                <img src="map-placeholder-img.png" alt="Map Location" class="map-image">
+                <img src="images/map-contact.png" alt="Map Location" class="map-image">
             </div>
              <p class="extra-footer-text">Fuefer Fueter</p>
         </div>
         
     </main>
 
-    <footer class="footer-simple">
+    <footer class="contact-footer-simple">
         <div class="copyright-info">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Help Center</a>
-            <p>© 2024 Shifra Training Center. All Rights Reserved.</p>
+             <p>heec ettruut i'ied</p>
         </div>
     </footer>
 

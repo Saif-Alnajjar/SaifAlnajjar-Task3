@@ -1750,3 +1750,368 @@ hr {
     height: 65% !important;
     object-fit: contain !important; /* لضمان عدم تشوه الصورة */
 }
+
+
+
+/* Hero Banner */
+.contact-hero-banner {
+    background-color: var(--primary-blue);
+    padding: 40px 0;
+    margin-bottom: 50px;
+    color: var(--text-light);
+    border-radius: 0 0 15px 15px; /* زوايا سفلية أكثر وضوحاً */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner-text {
+    flex-basis: 40%;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+}
+
+.contact-btn-main {
+    background-color: var(--text-light);
+    color: var(--primary-blue);
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+/* Media Card (القسم الأيمن في البانر) */
+.banner-media-card {
+    flex-basis: 60%;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start; /* ليكون المحتوى في الأعلى */
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-label {
+    font-size: 0.8rem;
+    color: #777;
+    margin: 0;
+}
+
+.detail-media-btn {
+    background-color: #eee;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin: 5px 0 5px;
+}
+
+.instructor-label {
+    font-size: 0.75rem;
+    color: var(--primary-blue);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.media-preview {
+    flex-basis: 45%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #eee; 
+    height: 150px; /* لضبط ارتفاع الفيديو/الصورة */
+}
+
+.media-preview .person-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* لجعل الصورة خفيفة كما في التصميم */
+}
+
+.media-preview .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-light);
+    border: 3px solid var(--text-light);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Content Layout */
+.contact-main-content {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 80px;
+    align-items: flex-start; 
+}
+
+.contact-form-container,
+.contact-info-container {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    background-color: var(--text-light);
+    height: fit-content;
+}
+
+.contact-form-container {
+    flex-basis: 60%;
+}
+
+.contact-info-container {
+    flex-basis: 40%;
+}
+
+.form-title-main, .info-column-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form Styles */
+.contact-form-wrapper {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-instruction {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    flex-basis: 20%; 
+    text-align: right;
+    font-weight: 500;
+    color: #555;
+    padding-right: 15px;
+    font-size: 0.9rem;
+}
+
+.contact-form .form-group input {
+    flex-basis: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.privacy-note {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: left;
+    margin: 10px 0 20px 100px;
+}
+
+.submit-btn-small {
+    width: 150px;
+    padding: 8px;
+    font-size: 0.9rem;
+    display: block;
+    margin-left: 100px;
+}
+
+
+/* Extra Message Section */
+.extra-message-section {
+    padding-top: 20px;
+}
+
+.section-title-alt {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.alt-p-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.message-item {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.message-item .message-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.message-item .message-body {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.submit-btn-large {
+    width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Contact Information Blue Card */
+.info-card-blue {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-card-blue h3 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.info-item-blue {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-item-blue i {
+    font-size: 1rem;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.info-item-blue p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.clock-item {
+    margin-bottom: 0;
+}
+
+/* Map Placeholder */
+.map-placeholder-contact {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.map-placeholder-contact .map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.extra-footer-text {
+    text-align: left;
+    color: #999;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Simple Footer (مطابق لأسفل الصورة) */
+.contact-footer-simple {
+    background-color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.contact-footer-simple .copyright-info p {
+    font-size: 0.8rem;
+    color: #777;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .banner-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-main-content {
+        flex-direction: column;
+    }
+
+    .contact-form-container,
+    .contact-info-container {
+        flex-basis: 100%;
+    }
+
+    .contact-form .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-form .form-group label {
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .privacy-note, .submit-btn-small {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .submit-btn-small {
+        margin: 10px auto;
+    }
+}
